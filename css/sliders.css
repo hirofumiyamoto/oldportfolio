@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,div,a,img,ul,li {
+	margin:0;
+	padding:0;
+}
+
+#page-wrap {
+	margin-top:70px;
+	margin-bottom:75px;
+}
+
+.slider-wrap {
+	width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+#main-photo-slider {
+	border:solid 5px #000;
+}
+
+.stripViewer {
+	position:relative;
+	overflow:hidden;
+	width:890px;
+	height:470px;
+}
+
+a.slideImg {
+	display:inline-block;
+}
+
+.stripViewer .panelContainer {
+	position:relative;
+	left:0; top: 0;
+}
+
+.stripViewer .panelContainer .panel {
+	float:left;
+	height:100%;
+	position:relative;
+	width:890px;
+}
+
+.stripNavL, .stripNavR, .stripNav{
+	display:none;
+}
+
+.photo-meta-data {
+	background:url(../images/transpBlack.png);
+	padding:0;
+	margin:0;
+	height:130px;
+	margin-top:-130px;
+	position:relative;
+	z-index:9999;
+	color:white;
+}
+
+.photo-meta-data {
+	font-size:110px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.photo-meta-data a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.photo-meta-data p.p-text {
+	color:#fff;
+	cursor:default;
+}
+
+.photo-meta-data a:hover {
+	color:#b0801e;
+}
+
+#page-wrap ul {
+	list-style-type:none;
+}
+
+#page-wrap ul#circles {
+	margin-left:378px;
+	margin-top:-50px;
+	padding-bottom:50px;
+}
+
+#page-wrap ul li.circle {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+#page-wrap ul li.circle a {
+	background-image:url(../images/circle.gif);
+	display:block;
+	width:28px;
+	height:28px;
+	float:left;
+	margin-right:10px;
+}
+
+#page-wrap ul li.circle a:hover {
+	background-position:left bottom;
+}
+
+.nav-thumb {
+	margin-right:10px;
+}
+
+.active-thumb {
+	background-image:url(../images/circle_blue.png);
+	width:28px;
+	height:28px;
+}
+
+#page-wrap ul#arrows a {
+	margin:0;
+	padding:0;
+}
+
+#page-wrap ul#arrows li a#arrowsL {
+	background-image:url(../images/arrow_left.gif);
+	width:38px;
+	height:38px;
+	position:absolute;
+	top:221px;
+	left:5px;
+}
+
+#page-wrap ul#arrows li a#arrowsR {
+	background-image:url(../images/arrow_right.gif);
+	width:38px;
+	height:38px;
+	position:absolute;
+	top:221px;
+	right:5px;
+}

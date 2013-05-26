@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,div,a,img,ul,li {
+	margin:0;
+	padding:0;
+}
+
+.slider-wrap {
+	width:422px;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+	left:40px;
+	top:191px;
+}
+
+#main-photo-slider {
+	border:solid 1px #000;
+}
+
+.stripViewer {
+	position:relative;
+	overflow:hidden;
+	width:422px;
+	height:342px;
+}
+
+
+.stripViewer .panelContainer {
+	position:relative;
+	left:0; top: 0;
+}
+
+.stripViewer .panelContainer .panel {
+	float:left;
+	height:100%;
+	position:relative;
+	width:421px;
+}
+
+.stripNavL, .stripNavR, .stripNav{
+	display:none;
+}
+
+.wrapper a.slideImg:hover {
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	-ms-filter:"alpha( opacity=50 )";
+}
+
+#mainVisual #whiteboard ul#papers {
+	list-style-type:none;
+	margin-left:393px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#whiteBoard a#paper-port {
+	position:absolute;
+	left:258px;
+	top:59px;
+	width:100px;
+	height:100px;
+}
+
+#whiteBoard a#paper-blog {
+	position:absolute;
+	left:503px;
+	top:59px;
+	width:100px;
+	height:100px;
+}
+
+#whiteBoard a#paper-band {
+	position:absolute;
+	left:751px;
+	top:59px;
+	width:100px;
+	height:100px;
+}
+
+.nav-thumb {
+	margin-right:10px;
+}

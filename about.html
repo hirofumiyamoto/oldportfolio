@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>H. Miyamoto : Web Design Portfolio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" href="images/fav.ico" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+<div id="container">
+  <!-- ヘッダー -->
+  <div id="header">
+    <div id="headerArea">
+      <h1><a href="http://www.hirofumimiyamoto.com/"><span>Hirofumi Miyamoto Web Design Portfolio</span></a></h1>
+      <img id="nazomaru" src="images/nazo_maru.png" width="201" height="51" alt="謎丸" />
+      <!-- ヘッダーナビ -->
+      <ul id="nav">
+        <li class="btn"><a id="btnHome" href="http://www.hirofumimiyamoto.com/"><span>Home</span></a></li>
+        <li class="btn"><a id="btnWorks" href="works.html"><span>Works</span></a></li>
+        <li id="btnAbout" class="btn" style="color:#e15684; cursor:default"><span>About</span></li>
+        <li class="btn"><a id="btnContact" href="contact.php"><span>Contact</span></a></li>
+        <li><a id="btnTwitter" href="http://twitter.com/share?url=http://www.hirofumimiyamoto.com/&text=Hirofumi Miyamoto ： Web Design Portfolio" onclick="window.open(this.href, 'twitter_tweet', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" target="_blank"><img src="images/btn_twitter.png" width="33" height="23" alt="Twitter" /><span>Twitter</span></a></li>
+        <li><a id="btnFacebook" href="http://facebook.com/share.php?u=http://www.hirofumimiyamoto.com/" target="_blank"><img src="images/btn_facebook.png" width="24" height="24" alt="Facebook" /><span>Facebook</span></a></li>
+      </ul>
+    </div>
+    <!-- ヘッダーナビここまで -->
+    <div class="clear"></div>
+  </div>
+  <!-- ヘッダーここまで-->
+  <!-- メイン -->
+  <div id="main">
+    <h2>About</h2>
+    <div class="text">
+      <p>ミヤモトヒロフミです。アビリティー・コンピュータ学院CG・WEB実践スペシャリスト科でWebデザインの勉強をしています。大学卒業後、印刷会社で3年くらい営業の仕事もしていました。それぞれの場所で学んだ知識・経験が今後、活かせたらと。。</p>
+      <p>どうでもいい情報。ギターをはじめたのは1997年頃ですが、全く上手くならないという才能の持ち主です。ベースは2010年10月から、ドラムは正味24時間ほどの経験があります。知り合いの披露宴でのつまらない余興レベルかと。</p>
+    </div>
+    <div id="contentsArea">
+      <div id="contentsLeft">
+        <h3 class="doc">Skills</h3>
+        <ul id="skill">
+          <li class="html"><span>(X)HTML 7/10</span></li>
+          <li class="css"><span>CSS 6/10</span></li>
+          <li class="js"><span>Javascript 4/10</span></li>
+          <li class="php"><span>PHP 2/10</span></li>
+          <li class="jq"><span>jQuery 4/10</span></li>
+          <li class="wp"><span>WordPress 4/10</span></li>
+        </ul>
+        <h3 class="doc">Softwares</h3>
+        <ul id="softwares">
+          <li class="ps"><span>Photoshop 6/10</span></li>
+          <li class="ai"><span>Illustrator 5/10</span></li>
+          <li class="fl"><span>Flash 3/10</span></li>
+          <!-- <li class="etc"><span>etc.</span></li> -->
+        </ul>
+      </div>
+      <div id="contentsRight"> <img id="aboutVisual" src="images/about_main.jpg" width="451" height="639" alt="" /> </div>
+    </div>
+  </div>
+  <!-- メインここまで -->
+  <!-- フッター -->
+  <div id="footer">
+    <div id="footerArea">
+      <h2 class="ftLogo"><a href="http://www.hirofumimiyamoto.com/"><span>Hirofumi Miyamoto Web Design Portfolio</span></a></h2>
+      <ul id="ftNav">
+        <li class="ft"><a id="btnHome" href="http://www.hirofumimiyamoto.com/"><span>Home</span></a></li>
+        <li class="ft"><a id="btnWorks" href="works.html"><span>Works</span></a></li>
+        <li class="ft"><a id="btnAbout" href="about.html"><span>About</span></a></li>
+        <li class="ft"><a id="btnContact" href="contact.php"><span>Contact</span></a></li>
+      </ul>
+      <p>&copy; 2011 Hirofumi Miyamoto All Rights Reserved.</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- フッターここまで -->
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29244812-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

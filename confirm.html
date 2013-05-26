@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>H. Miyamoto : Web Design Portfolio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" href="images/fav.ico" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+
+$(function() {  
+
+    $('#mainVisual a').lightBox();  
+
+});
+
+</script>
+</head>
+<body>
+<div id="container">
+  <!-- ヘッダー -->
+  <div id="header">
+    <div id="headerArea">
+      <h1><a href="http://www.hirofumimiyamoto.com/"><span>Hirofumi Miyamoto Web Design Portfolio</span></a></h1>
+      <img id="nazomaru" src="images/nazo_maru.png" width="201" height="51" alt="謎丸" />
+      <!-- ヘッダーナビ -->
+      <ul id="nav">
+        <li class="btn"><a id="btnHome" href="http://www.hirofumimiyamoto.com/"><span>Home</span></a></li>
+        <li class="btn"><a id="btnWorks" href="works.html"><span>Works</span></a></li>
+        <li class="btn"><a id="btnAbout" href="about.html"><span>About</span></a></li>
+        <li id="btnContact" class="btn" style="color:#e15684; cursor:default"><span>Contact</span></li>
+        <li><a id="btnTwitter" href="http://twitter.com/share?url=http://www.hirofumimiyamoto.com/&text=Hirofumi Miyamoto ： Web Design Portfolio" onclick="window.open(this.href, 'twitter_tweet', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" target="_blank"><span>Twitter</span></a></li>
+        <li><a id="btnFacebook" href="http://facebook.com/share.php?u=http://www.hirofumimiyamoto.com/" target="_blank"><span>Facebook</span></a></li>
+      </ul>
+    </div>
+    <!-- ヘッダーナビここまで -->
+    <div class="clear"></div>
+  </div>
+  <!-- ヘッダーここまで-->
+  <!-- メイン -->
+  <div id="main">
+    <h2>Confirm</h2>
+    <div class="text">
+      <p>ご記載の内容をご確認ください。</p>
+    </div>
+    <div id="layout">
+      <form method="post" name="sfm-form" id="sfm-form" action="<?php echo $sfm_script; ?>">
+        <dl>
+          <dt>お名前</dt>
+          <dd class="confirm"><?php echo $sfm_html->name; ?></dd>
+          <dt>メールアドレス</dt>
+          <dd class="confirm"><?php echo $sfm_html->email; ?></dd>
+          <dt>Webサイト</dt>
+          <dd class="confirm"><?php echo $sfm_html->subject; ?></dd>
+          <dt>メッセージ</dt>
+          <dd class="confirm"><?php echo $sfm_html->message; ?></dd>
+          <dt class="submit"><?php echo $sfm_submit; ?></dt>
+        </dl>
+      </form>
+      <?php $this->crCheck(); ?>
+    </div>
+  </div>
+  <!-- メインここまで -->
+  <!-- フッター -->
+  <div id="footer">
+    <div id="footerArea">
+      <h2 class="ftLogo"><a href="http://www.hirofumimiyamoto.com/"><span>Hirofumi Miyamoto Web Design Portfolio</span></a></h2>
+      <ul id="ftNav">
+        <li class="ft"><a id="btnHome" href="http://www.hirofumimiyamoto.com/"><span>Home</span></a></li>
+        <li class="ft"><a id="btnWorks" href="works.html"><span>Works</span></a></li>
+        <li class="ft"><a id="btnAbout" href="about.html"><span>About</span></a></li>
+        <li class="ft"><a id="btnContact" href="contact.php"><span>Contact</span></a></li>
+      </ul>
+      <p>&copy; 2011 Hirofumi Miyamoto All Rights Reserved.</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- フッターここまで -->
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29244812-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
